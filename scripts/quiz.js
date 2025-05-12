@@ -131,7 +131,8 @@ const questions = [
     btn.style.borderRadius = "10px";
     btn.style.cursor = "pointer";
     btn.onclick = () => {
-      window.location.href = "https://www.ornekkupon.com/hatirat10"; // Kupon sayfanın adresi
+     window.location.href = "../pages/saleCPage.html";
+
     };
   
     document.getElementById("coupon-button-container").appendChild(btn);
