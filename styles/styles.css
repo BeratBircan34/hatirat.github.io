@@ -1,0 +1,233 @@
+/* === GENEL SIFIRLAMA === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* === GÖVDE VE GENEL YAPI === */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* === HEADER === */
+  header {
+    background-color: #222;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;.header {
+        width: 100%;
+        background-color: #111; /* isteğe bağlı */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+      }
+  }
+  
+  /* === NAVBAR === */
+ /* === GENEL NAVBAR STİLİ === */
+/* === GENEL NAVBAR STİLİ === */
+.navbar {
+    background-color: #222;
+    width: 100%;
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-direction: row;         /* Geniş ekranda yatay dizilim */
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-list li {
+    margin: 0;
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    background-color: #555;
+  }
+  
+  /* === RESPONSIVE: 768px ve altı === */
+  @media (max-width: 800px) {
+    .nav-list {
+      flex-direction: column;     /* Dikey hizala */
+      align-items: center;        /* Ortala */
+    }
+  
+    .nav-list li {
+      width: 100%;                /* Tüm genişliği kapla */
+    }
+  
+    .nav-link {
+      text-align: center;
+      width: 100%;                /* Tüm butonlar geniş */
+      border-bottom: 1px solid #444;
+    }
+  
+    .nav-link:last-child {
+      border-bottom: none;
+    }
+  }
+  
+  /* === MAİN İÇERİK === */
+  main {
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 6px;
+  }
+  
+  /* === GÖRSELLER === */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* === FOOTER === */
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 20px;
+  }
+  
+  /* === RESPONSIVE KIRILMA NOKTALARI === */
+  
+  /* Tablet ve altı ekranlar için */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    body {
+      font-size: 15px;
+    }
+  }
+  
+  /* Mobil ekranlar için daha küçük yazı ve sade yapı */
+  @media (max-width: 480px) {
+    header, footer {
+      font-size: 16px;
+    }
+  
+    nav ul li {
+      padding: 12px 5px;
+    }
+  
+    main {
+      padding: 15px;
+    }
+  
+    body {
+      font-size: 14px;
+    }
+  }
+  .responsive-image {
+    width: 100%;
+    height: auto;
+}
+footer {
+    background-color: #fdf5e6;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-family: 'Cinzel', serif;
+    color: #333;
+    font-size: 18px;
+  }
+  nav a:hover {
+    color: #5c4033; /* koyu kahverengi */
+    text-decoration: none; /* alt çizgiyi kaldırır */
+    transition: color 0.3s ease; /* yumuşak geçiş efekti */
+    font-weight: 600;
+}
+.quiz-container {
+    display: none;
+    background-color: #fff7ea;
+    border: 2px dashed #a47c48;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(165, 116, 60, 0.2);
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+  }
+  
+  .quiz-container.fade-in {
+    opacity: 1;
+  }
+  
+  .quiz-question {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4b3213;
+  }
+  
+  .quiz-options button:hover {
+    background-color: #b98a56;
+    color: white;
+  }
+  .return-container {
+    background-color: #fff8e7;
+    border: 4px groove #bfa164;
+    border-radius: 25px;
+    padding: 25px;
+    max-width: 500px;
+    margin: 60px auto;
+    font-family: 'Cinzel', serif;
+    box-shadow: inset 0 0 10px rgba(214, 182, 122, 0.4), 0 0 12px rgba(191, 161, 100, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.return-container:hover {
+    transform: scale(1.03);
+}
+
+.return-container a {
+    text-decoration: none;
+    color: #4a3f2b;
+    font-size: 32px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.return-container a:hover {
+    color: #bfa164;
+}  
+  

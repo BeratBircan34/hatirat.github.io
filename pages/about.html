@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lovelo&display=swap" rel="stylesheet">
+    <!--responsive css çağırma-->>
+    <link rel="stylesheet" href="../styles/styles.css">
+    
+
+    <title>Hatırat Hediyelik</title>
+</head>
+<body style="margin: 0; background-color: whitesmoke; text-align: center;">
+    <div class="header-frame">
+        <div class="header-content">
+          <h1 class="brand">hatırat.</h1>
+          <p class="slogan">Hediyelik & Kitap</p>
+      
+          <nav class="horizontal-menu">
+            <a href="../index.html">Ana Sayfa</a>
+            <a href="about.html">Hakkımızda</a>
+            <a href="products.html">Ürünler</a>
+            <a href="feedback.html">Bizi Değerlendirin!</a>
+            <a href="alerts.html">Duyurular</a>
+            <a href="contact.html">İletişim</a>
+            <a href="odulluquiz.html">Quiz!</a>
+            <a href="blog.html">Blog</a>
+          </nav>
+        </div>
+      </div>
+      
+      <style>
+        body {
+          background-color: #ece6db;
+          margin: 0;
+          padding: 0;
+          font-family: 'Cinzel', serif;
+        }
+      
+        .header-frame {
+    width: 100%;
+    padding: 10px 0; /* Burayı incelttim */
+    border: 1px solid #9a7b59;
+    border-radius: 50px;
+    background-color: #fdf5e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+    position: relative;
+    overflow: hidden;
+}
+
+      
+        .header-frame::before,
+        .header-frame::after {
+          content: "";
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          border: 1px solid #9a7b59;
+          border-radius: 50%;
+          top: -25px;
+          background-color: #fdf5e6;
+        }
+      
+        .header-frame::before {
+          left: -25px;
+          border-right: none;
+          border-bottom: none;
+        }
+      
+        .header-frame::after {
+          right: -25px;
+          border-left: none;
+          border-bottom: none;
+        }
+      
+        .header-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+        }
+      
+        .brand {
+          font-family: 'League Spartan', sans-serif;
+          font-size: 80px;
+          color: #4d3a29;
+          margin: 0;
+        }
+      
+        .slogan {
+          font-size: 30px;
+          color: #7a5c3e;
+          margin: 0;
+        }
+      
+        .horizontal-menu {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 35px;
+          margin-top: 25px;
+        }
+      
+        .horizontal-menu a {
+          text-decoration: none;
+          font-size: 24px;
+          color: #4a3a2c;
+          position: relative;
+          padding: 8px 12px;
+          transition: all 0.3s ease;
+          border-bottom: 2px solid transparent;
+        }
+      
+        .horizontal-menu a:hover {
+          color: #c4a76b;
+          border-bottom: 2px solid #d6b679;
+          transform: scale(1.1);
+        }
+      </style>
+    <div style="max-width: 1100px; margin: auto; padding: 20px;">
+        <hr style="border: 1px solid #d6b67a;">
+        
+        <h2 style="font-family: 'Cinzel', serif; text-align: center; font-weight: 700; font-size: 60px; color: #4a3f2b;">Bizi Yakından Tanıyın!</h2>
+        <div style="border: 3px solid #d6b67a; padding: 20px; border-radius: 10px; margin-bottom: 40px;">
+            <h2 style="font-family: 'Cinzel', serif; text-align: center; font-weight: 700; font-size: 50px; color: #4a3f2b;">Nasıl Kurulduk?</h2>
+            <p style="font-family: 'Cinzel', serif; text-align: center; font-size: 40px; color: #4a3f2b; line-height: 1.6;">
+                Hatırat Hediyelik, nostaljiyi, zerafeti, dekorasyonu ve geçmişin izlerini bir arada sunma fikriyle doğdu. 
+                Amacımız, özel günlerinizde anlam katacak hediyeleri, nostaljik kitapları, zarif takıları ve dekoratif tabloları 
+                uygun fiyatlarla sunarak hayatınıza dokunmaktır.
+            </p>
+        </div>
+        
+        <h2 style="font-family: 'Cinzel', serif; text-align: center; font-weight: 700; font-size: 60px; color: #4a3f2b;">Misyon & Vizyon</h2>
+        <div style="border: 3px solid #d6b67a; padding: 20px; border-radius: 10px; margin-bottom: 40px;">
+            <h4 style="font-family: 'Cinzel', serif; text-align: center; font-size: 40px; color: #4a3f2b; line-height: 1.6;">
+                Bu fikirle yola çıkarken, kendi standartlarımızı ve vizyonumuzu belirledik.
+            </h4>
+            
+            <h2 style="font-family: 'Cinzel', serif; text-align: center; font-weight: 700; font-size: 50px; color: #4a3f2b;">Vizyonumuz:</h2>
+            <ul style="font-family: 'Cinzel', serif; text-align: center; font-size: 40px; color: #4a3f2b; line-height: 1.6; list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 10px;">Nostalji, zerafet ve dekorasyonu tek çatı altında birleştirerek benzersiz bir alışveriş deneyimi sunmak.</li>
+                <li style="margin-bottom: 10px;">Geçmişin izlerini geleceğe taşıyan, anlamlı ve özgün ürünlerle müşterilerimizin özel anlarını renklendirmek.</li>
+            </ul>
+        </div>
+        
+        <h2 style="font-family: 'Cinzel', serif; text-align: center; font-weight: 700; font-size: 50px; color: #4a3f2b;">Misyonumuz:</h2>
+        <div style="border: 3px solid #d6b67a; padding: 20px; border-radius: 10px; margin-bottom: 40px;">
+            <ul style="font-family: 'Cinzel', serif; text-align: center; font-size: 40px; color: #4a3f2b; line-height: 1.6; list-style-type: none; padding: 0;">
+                <li style="margin-bottom: 10px;">Özel günlere anlam katacak hediyeleri uygun fiyatlarla sunmak.</li>
+                <li style="margin-bottom: 10px;">Nostaljik kitaplar, zarif takılar ve dekoratif tablolar gibi çeşitli ürünlerle müşterilerimizin ihtiyaçlarını karşılamak.</li>
+                <li style="margin-bottom: 10px;">Kaliteli, estetik ve duygusal değeri yüksek ürünlerle sürdürülebilir bir hizmet anlayışı benimsemek.</li>
+            </ul>
+        </div>
+        
+        <h2 style="font-family: 'Cinzel', serif; text-align: center; font-weight: 700; font-size: 50px; color: #4a3f2b;">Değerlerimiz</h2>
+        <div style="border: 3px solid #d6b67a; padding: 20px; border-radius: 10px; margin-bottom: 40px;">
+            <p style="font-family: 'Cinzel', serif; text-align: center; font-size: 40px; color: #4a3f2b; line-height: 1.6;">
+                Hatırat Hediyelik olarak her zaman müşteri memnuniyetini ön planda tutarak; 
+                güven, dürüstlük ve kaliteli hizmet anlayışıyla hareket ediyoruz. 
+                Müşterilerimizin yaşamlarına değer katmak ve onların özel anlarını güzelleştirmek için çalışıyoruz.
+            </p>
+        </div>
+        
+        <h2 style="font-family: 'Cinzel', serif; text-align: center; font-weight: 700; font-size: 50px; color: #4a3f2b;">Sizlere Nasıl Hizmet Veriyoruz?</h2>
+        <div style="border: 3px solid #d6b67a; padding: 20px; border-radius: 10px;">
+            <p style="font-family: 'Cinzel', serif; text-align: center; font-size: 40px; color: #4a3f2b; line-height: 1.6;">
+                Ürünlerimizi seçerken, her birinin anlamlı ve kaliteli olmasına dikkat ediyoruz. 
+                Bizimle alışveriş yapan herkes, sadece güzel bir ürün almakla kalmaz, 
+                aynı zamanda ona özel anlamlar yükleyen hediyelere sahip olur.
+            </p>
+        </div>
+        <div style="max-width: 1100px; margin: auto; padding: 20px;">
+            <h2 style="font-family: 'Cinzel', serif; text-align: center; font-weight: 700; font-size: 50px; color: #4a3f2b;">Müşteri Memnuniyeti</h2>
+            <div style="border: 5px solid #8a6f40; background-color: #fef6e0; padding: 20px; border-radius: 15px; margin-bottom: 40px; position: relative; overflow: hidden; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); background-image: url('https://www.transparenttextures.com/patterns/old-map.png'); background-size: cover;">
+                <div class="testimonial-container">
+                    <div class="testimonial" style="opacity: 1;">
+                        <h4 style="font-family: 'Cinzel', serif; font-size: 40px; color: #4a3f2b; text-align: center; padding: 20px;">"Mükemmel hizmet, harika ürünler! Gerçekten çok beğendim!" - Ali K.</h4>
+                    </div>
+                    <div class="testimonial" style="opacity: 0;">
+                        <h4 style="font-family: 'Cinzel', serif; font-size: 40px; color: #4a3f2b; text-align: center; padding: 20px;">"Hatırat Hediyelik'ten aldığım ürünler, gerçekten çok anlamlı ve özel." - Zeynep A.</h4>
+                    </div>
+                    <div class="testimonial" style="opacity: 0;">
+                        <h4 style="font-family: 'Cinzel', serif; font-size: 40px; color: #4a3f2b; text-align: center; padding: 20px;">"Hızlı teslimat ve kaliteli ürün, teşekkürler!" - Emre D.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 200px; /* Yorumlar için yeterli yükseklik */
+    overflow: hidden;
+}
+
+/* Her bir testimonial */
+.testimonial {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    opacity: 0; /* Başlangıçta görünmez */
+    animation: fadeInOut 15s infinite; /* Toplam döngü süresi */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Her yorum için gecikme süreleri */
+.testimonial:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.testimonial:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.testimonial:nth-child(3) {
+    animation-delay: 10s;
+}
+
+/* Animasyon keyframes */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; /* Başlangıçta görünmez */
+    }
+    10% {
+        opacity: 1; /* Hızla görünür olur */
+    }
+    33.33% {
+        opacity: 1; /* Görünür kalır */
+    }
+    43.33% {
+        opacity: 0; /* Yavaşça kaybolur */
+    }
+    100% {
+        opacity: 0; /* Kalan sürede görünmez */
+    }
+}
+        </style>
+        
+    </div>
+    
+    
+
+
+
+<!-- Alt Bilgi -->
+<footer>
+    <h3 style="font-family: 'Cinzel', serif;  font-size: 40px;">&copy; 2025 Hatırat Hediyelik | Tüm hakları saklıdır.<h3>
+</footer>
+<link rel="stylesheet" href="../styles/classicFrame.css">
+<script src="../scripts/addParagraphFrames.js"></script>
+</body>
+</html>

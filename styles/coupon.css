@@ -1,0 +1,144 @@
+/* Genel sayfa ayarları */
+body {
+    background-color: #ece6db;
+    font-family: 'Cinzel', serif;
+    color: #4a3f2b;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Tebrik başlığı */
+  .congrats {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  /* İndirim bilgisi bölümü */
+  .discount-info {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .shopier-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border: 2px solid #d6b679;
+    border-radius: 50px;
+    transition: background 0.3s, transform 0.3s;
+    text-decoration: none;
+    color: #4a3f2b;
+  }
+  .shopier-link img {
+    height: 32px;
+  }
+  .shopier-link:hover {
+    background-color: #d6b679;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  /* Kullanım Şartları */
+  .terms {
+    max-width: 800px;
+    margin: 0 auto 40px;
+  }
+  .terms h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .terms-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .term-item {
+    flex: 1 1 240px;
+    background: white;
+    padding: 15px;
+    border: 1px solid #d6b679;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-size: 18px;
+  }
+  
+  /* Form bölümü */
+  .coupon-form {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    background: white;
+    padding: 30px;
+    border: 1px solid #d6b679;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .coupon-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .coupon-form input[type="text"],
+  .coupon-form input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .coupon-form .checkbox-group {
+    margin-bottom: 15px;
+  }
+  .coupon-form .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+  }
+  .coupon-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d6b679;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: not-allowed;
+    opacity: 0.6;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  .coupon-form button.enabled {
+    cursor: pointer;
+    opacity: 1;
+  }
+  .coupon-form button.enabled:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Kupon kutusu */
+  .coupon-box {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background: #fdf5e6;
+    border: 1px solid #d6b679;
+    border-radius: 10px;
+    display: none;
+  }
+  .coupon-code {
+    font-size: 32px;
+    color: #5a3e2b;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .copy-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #4a3f2b;
+  }
+  .copy-icon:hover {
+    color: #c4a76b;
+  }
+  

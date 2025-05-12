@@ -1,0 +1,97 @@
+/* Body ayarları */
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tablo genel stil */
+table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 60%;
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* Tablo hover efekti */
+table:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Tablo başlık */
+caption {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: 15px;
+    background-color: #d6b67a; /* Altın kahverengi */
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #bfa164;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Tablo hücreleri */
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1em;
+}
+
+/* Tablo başlık hücreleri */
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* Tablo veri hücreleri */
+td {
+    text-align: left;
+    color: #555;
+    background-color: #fafafa;
+}
+
+/* Kıvrımlı köşeler ve desenli çerçeve */
+table::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 1px dashed #d6b67a;
+    border-radius: 25px;
+    pointer-events: none;
+}
+
+/* Son satırın altındaki kenarlığı kaldır */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Mobil uyumlu stil */
+@media (max-width: 768px) {
+    table {
+        width: 90%;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    caption {
+        font-size: 1.3em;
+    }
+}

@@ -1,0 +1,36 @@
+/* RESİMLERE ESTETİK ÇERÇEVE */
+img {
+  border: 4px solid #d6b67a;         /* Altın tonunda zarif bir çerçeve */
+  border-radius: 12px;               /* Kenarları yumuşat */
+  padding: 8px;                      /* Çerçeve ile içerik arasında boşluk */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Daha belirgin ve şık gölge efekti */
+  max-width: 100%;                   /* Responsive kalması için */
+  height: auto;
+  margin: 15px 0;                    /* Üst-alt boşluk */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover efekti için geçiş ekledim */
+}
+
+/* Hover efekti resimlere */
+img:hover {
+  transform: scale(1.05);            /* Resim üzerine gelindiğinde büyüme efekti */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Hover esnasında daha belirgin gölge efekti */
+}
+
+/* PARAGRAFLARA VURGU */
+p {
+  background-color: #f7f4f0;         /* Hafif krem tonunda arka plan */
+  border-left: 6px solid #d6b67a;     /* Altın rengi vurgulu sol çizgi */
+  padding: 12px 20px;
+  margin: 20px 0;
+  font-size: 1.15em;
+  line-height: 1.8;
+  color: #555;                       /* Metin rengi */
+  font-family: 'Cinzel', serif;       /* Başka bir zarif font */
+}
+
+/* Hover efekti paragraflar için */
+p:hover {
+  background-color: #f2f0e6;          /* Arka planı daha parlak hale getir */
+  border-left: 6px solid #8a4baf;      /* Sol kenar çizgisinin rengini değiştir */
+  transition: all 0.3s ease;           /* Geçiş efekti */
+}

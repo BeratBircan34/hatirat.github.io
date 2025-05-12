@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="../styles/tableFrame.css"
+
+  <title>Teşekkürler</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #fefae0; padding: 20px;">
+
+  <h2 style="text-align: center;">Geri Bildiriminiz İçin Teşekkür Ederiz!</h2>
+
+  <p style="text-align: center;">Aşağıda ilettiğiniz bilgiler yer almaktadır:</p>
+
+  <table border="1" style="text-align: center;">
+    <caption><strong>Kişisel Bilgiler</strong></caption>
+    <tr>
+      <th>Ad</th>
+      <td id="ad"></td>
+    </tr>
+    <tr>
+      <th>Soyad</th>
+      <td id="soyad"></td>
+    </tr>
+    <tr>
+      <th>Yaş</th>
+      <td id="yas"></td>
+    </tr>
+    <tr>
+      <th>E-posta</th>
+      <td id="email"></td>
+    </tr>
+  </table>
+
+  <br>
+
+  <table border="1" style=" text-align: center;">
+    <caption><strong>Diğer Yanıtlar</strong></caption>
+    <tr>
+      <th>Alışveriş Yaptınız mı?</th>
+      <td id="alisveris"></td>
+    </tr>
+    <tr>
+      <th>Hizmet Deneyimi</th>
+      <td id="experience"></td>
+    </tr>
+    <tr>
+      <th>Yorumlar</th>
+      <td id="message"></td>
+    </tr>
+  </table>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("ad").textContent = params.get("ad");
+    document.getElementById("soyad").textContent = params.get("soyad");
+    document.getElementById("yas").textContent = params.get("yas");
+    document.getElementById("email").textContent = params.get("email");
+    document.getElementById("alisveris").textContent = params.get("alisveris");
+    document.getElementById("experience").textContent = params.get("experience");
+    document.getElementById("message").textContent = params.get("message");
+  </script>
+ <div class="return-container">
+  <a href="../index.html">Anasayfaya Dön</a>
+</div>
+
+</body>
+</html>

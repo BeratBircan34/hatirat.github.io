@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lovelo&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/styles.css">
+    
+        <title>Hatırat Hediyelik</title>
+    </head>
+    <body style="margin: 0; background-color: #ece6db;">
+        <div class="header-frame">
+            <div class="header-content">
+              <h1 class="brand">hatırat.</h1>
+              <p class="slogan">Hediyelik & Kitap</p>
+          
+              <nav class="horizontal-menu">
+                <a href="../index.html">Ana Sayfa</a>
+                <a href="about.html">Hakkımızda</a>
+                <a href="products.html">Ürünler</a>
+                <a href="feedback.html">Bizi Değerlendirin!</a>
+                <a href="alerts.html">Duyurular</a>
+                <a href="contact.html">İletişim</a>
+                <a href="odulluquiz.html">Quiz!</a>
+                <a href="blog.html">Blog</a>
+              </nav>
+            </div>
+          </div>
+          
+          <style>
+            body {
+              background-color: #ece6db;
+              margin: 0;
+              padding: 0;
+              font-family: 'Cinzel', serif;
+            }
+          
+            .header-frame {
+        width: 100%;
+        padding: 10px 0; /* Burayı incelttim */
+        border: 1px solid #9a7b59;
+        border-radius: 50px;
+        background-color: #fdf5e6;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+        position: relative;
+        overflow: hidden;
+    }
+    
+          
+            .header-frame::before,
+            .header-frame::after {
+              content: "";
+              position: absolute;
+              width: 50px;
+              height: 50px;
+              border: 1px solid #9a7b59;
+              border-radius: 50%;
+              top: -25px;
+              background-color: #fdf5e6;
+            }
+          
+            .header-frame::before {
+              left: -25px;
+              border-right: none;
+              border-bottom: none;
+            }
+          
+            .header-frame::after {
+              right: -25px;
+              border-left: none;
+              border-bottom: none;
+            }
+          
+            .header-content {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 20px;
+            }
+          
+            .brand {
+              font-family: 'League Spartan', sans-serif;
+              font-size: 80px;
+              color: #4d3a29;
+              margin: 0;
+            }
+          
+            .slogan {
+              font-size: 30px;
+              color: #7a5c3e;
+              margin: 0;
+            }
+          
+            .horizontal-menu {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 35px;
+              margin-top: 25px;
+            }
+          
+            .horizontal-menu a {
+              text-decoration: none;
+              font-size: 24px;
+              color: #4a3a2c;
+              position: relative;
+              padding: 8px 12px;
+              transition: all 0.3s ease;
+              border-bottom: 2px solid transparent;
+            }
+          
+            .horizontal-menu a:hover {
+              color: #c4a76b;
+              border-bottom: 2px solid #d6b679;
+              transform: scale(1.1);
+            }
+          </style>
+          <div class="congrats">Tebrikler! Quiz’i başarıyla tamamladınız.</div>
+
+          <div class="discount-info">
+            <p>Bu indirim kuponu <strong>Shopier</strong> sayfasında geçerlidir:</p>
+            <a href="https://www.shopier.com/hatirat" target="_blank" class="shopier-link">
+                <img src="https://cdn.brandfetch.io/idAlhgg4-S/w/225/h/225/theme/dark/icon.png?c=1bxid64Mup7aczewSAYMX&t=1668518755541" alt="Shopier" style="height: 32px;">
+                Shopier’de Kullan
+              </a>
+          </div>
+          
+          <div class="terms">
+            <h2>Kullanım Şartları</h2>
+            <div class="terms-list">
+              <div class="term-item">Kuponun maddi bir karşılığı yoktur.</div>
+              <div class="term-item">Tek seferlik kullanım için geçerlidir.</div>
+              <div class="term-item">Başka indirimlerle kombine edilemez.</div>
+              <div class="term-item">Son kullanım tarihi: 31 Aralık 2025.</div>
+              <div class="term-item">Hesap başına bir kupon tanımlıdır.</div>
+            </div>
+          </div>
+          
+          <form class="coupon-form">
+            <label for="name">İsim Soyisim</label>
+            <input type="text" id="name" required>
+          
+            <label for="phone">Telefon Numarası</label>
+            <input type="tel" id="phone" required>
+          
+            <div class="checkbox-group">
+              <label><input type="checkbox" required> Kullanım şartlarını okudum ve kabul ediyorum.</label>
+            </div>
+            <div class="checkbox-group">
+              <label><input type="checkbox" required> Kişisel verilerimin bu amaçla işlenmesine izin veriyorum.</label>
+            </div>
+            <div class="checkbox-group">
+              <label><input type="checkbox" required> Bilgilerimin doğru olduğunu onaylıyorum.</label>
+            </div>
+          
+            <button type="submit">İndirim Kuponunu Göster</button>
+          </form>
+          
+          <div class="coupon-box">
+            <div class="coupon-code"></div>
+            <div class="copy-icon">📋</div>
+          </div>
+          <script src="../scripts/coupon.js"></script>
+          <link rel="stylesheet" href="../styles/coupon.css">
+          
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* Quiz kutusu genel stil */
+.quiz-container {
+    background-color: #fdf5e6;
+    border: 3px double #d6b67a;
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 700px;
+    margin: 50px auto;
+    font-family: 'Cinzel', serif;
+    box-shadow: 0 0 15px rgba(214, 182, 122, 0.5);
+}
+
+/* Soru stili */
+.quiz-question {
+    font-size: 24px;
+    color: #4a3f2b;
+    margin-bottom: 20px;
+}
+
+/* Şıkların görünümü */
+.quiz-options button {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: #e6d3b3;
+    border: 2px solid #d6b67a;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-options button:hover {
+    background-color: #d6b67a;
+    color: white;
+}
+
+/* Başlat butonu */
+#start-quiz {
+    display: block;
+    background-color: #d6b67a;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 40px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#start-quiz:hover {
+    background-color: #bfa164;
+}
+
+/* Sonuç mesajı */
+#quiz-result {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 30px;
+    color: #4a3f2b;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+

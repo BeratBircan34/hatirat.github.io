@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lovelo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <title>Hatırat Hediyelik</title>
+</head>
+<body style="margin: 0; background-color: #ece6db;">
+    <div class="header-frame">
+        <div class="header-content">
+          <h1 class="brand">hatırat.</h1>
+          <p class="slogan">Hediyelik & Kitap</p>
+      
+          <nav class="horizontal-menu">
+            <a href="../index.html">Ana Sayfa</a>
+            <a href="about.html">Hakkımızda</a>
+            <a href="products.html">Ürünler</a>
+            <a href="feedback.html">Bizi Değerlendirin!</a>
+            <a href="alerts.html">Duyurular</a>
+            <a href="contact.html">İletişim</a>
+            <a href="odulluquiz.html">Quiz!</a>
+            <a href="blog.html">Blog</a>
+          </nav>
+        </div>
+      </div>
+      
+      <style>
+        body {
+          background-color: #ece6db;
+          margin: 0;
+          padding: 0;
+          font-family: 'Cinzel', serif;
+        }
+      
+        .header-frame {
+    width: 100%;
+    padding: 10px 0; /* Burayı incelttim */
+    border: 1px solid #9a7b59;
+    border-radius: 50px;
+    background-color: #fdf5e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+    position: relative;
+    overflow: hidden;
+}
+
+      
+        .header-frame::before,
+        .header-frame::after {
+          content: "";
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          border: 1px solid #9a7b59;
+          border-radius: 50%;
+          top: -25px;
+          background-color: #fdf5e6;
+        }
+      
+        .header-frame::before {
+          left: -25px;
+          border-right: none;
+          border-bottom: none;
+        }
+      
+        .header-frame::after {
+          right: -25px;
+          border-left: none;
+          border-bottom: none;
+        }
+      
+        .header-content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+        }
+      
+        .brand {
+          font-family: 'League Spartan', sans-serif;
+          font-size: 80px;
+          color: #4d3a29;
+          margin: 0;
+        }
+      
+        .slogan {
+          font-size: 30px;
+          color: #7a5c3e;
+          margin: 0;
+        }
+      
+        .horizontal-menu {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 35px;
+          margin-top: 25px;
+        }
+      
+        .horizontal-menu a {
+          text-decoration: none;
+          font-size: 24px;
+          color: #4a3a2c;
+          position: relative;
+          padding: 8px 12px;
+          transition: all 0.3s ease;
+          border-bottom: 2px solid transparent;
+        }
+      
+        .horizontal-menu a:hover {
+          color: #c4a76b;
+          border-bottom: 2px solid #d6b679;
+          transform: scale(1.1);
+        }
+      </style>
+    <h2 style="text-align: center; font-family: 'Cinzel',serif; font-size: 40px;">Hatırat İçin Geri Bildirim</h2>
+
+    <form action="tesekkurler.html" method="get" style="max-width: 500px; margin: auto; background-color: #f7f4f0; padding: 25px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); font-family: 'Cinzel', serif;">
+    
+        <label for="ad" style="font-size: 1.1em; color: #4a3f2b;">Ad:</label><br>
+        <input type="text" id="ad" name="ad" required style="width: 100%; padding: 12px; margin-top: 5px; border: 2px solid #d6b67a; border-radius: 10px; font-size: 1em; background-color: #fff; transition: border-color 0.3s ease;">
+        <br><br>
+    
+        <label for="soyad" style="font-size: 1.1em; color: #4a3f2b;">Soyad:</label><br>
+        <input type="text" id="soyad" name="soyad" required style="width: 100%; padding: 12px; margin-top: 5px; border: 2px solid #d6b67a; border-radius: 10px; font-size: 1em; background-color: #fff; transition: border-color 0.3s ease;">
+        <br><br>
+    
+        <label for="email" style="font-size: 1.1em; color: #4a3f2b;">E-posta:</label><br>
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 12px; margin-top: 5px; border: 2px solid #d6b67a; border-radius: 10px; font-size: 1em; background-color: #fff; transition: border-color 0.3s ease;">
+        <br><br>
+    
+        <label for="yas" style="font-size: 1.1em; color: #4a3f2b;">Yaş:</label><br>
+        <input type="range" id="yas" name="yas" min="18" max="100" value="18" oninput="this.nextElementSibling.value = this.value" style="width: 100%; background-color: #fff; border: 2px solid #d6b67a; border-radius: 10px;">
+        <output style="font-size: 1.2em; color: #4a3f2b;">18</output><br><br>
+    
+        <label style="font-size: 1.1em; color: #4a3f2b;">Alışveriş Yaptınız mı?</label><br>
+        <input type="radio" id="alisveris-evet" name="alisveris" value="evet" required>
+        <label for="alisveris-evet" style="font-size: 1em; color: #4a3f2b;">Evet</label>
+        <input type="radio" id="alisveris-hayir" name="alisveris" value="hayir">
+        <label for="alisveris-hayir" style="font-size: 1em; color: #4a3f2b;">Hayır</label><br><br>
+    
+        <label for="experience" style="font-size: 1.1em; color: #4a3f2b;">Hizmetlerimizi nasıl buldunuz?</label><br>
+        <select id="experience" name="experience" style="width: 100%; padding: 12px; font-size: 1em; border: 2px solid #d6b67a; border-radius: 10px;">
+            <option value="harika">Harika</option>
+            <option value="guzel">Güzel</option>
+            <option value="orta">Orta</option>
+            <option value="gelistirilebilir">Geliştirilebilir</option>
+        </select><br><br>
+    
+        <label for="message" style="font-size: 1.1em; color: #4a3f2b;">Yorumlarınız:</label><br>
+        <textarea id="message" name="message" rows="5" style="width: 100%; padding: 12px; font-size: 1em; border: 2px solid #d6b67a; border-radius: 10px; background-color: #fff;"></textarea><br><br>
+    
+        <input type="submit" value="Gönder" style="width: 100%; padding: 12px; background-color: #d6b67a; color: white; border: none; border-radius: 15px; font-size: 1.2em; cursor: pointer; transition: background-color 0.3s ease;">
+    </form>
+    
+    <!-- Alt Bilgi -->
+    <footer>
+        <p style="font-family: 'Cinzel', serif;  font-size: 40px;">&copy; 2025 Hatırat Hediyelik | Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>

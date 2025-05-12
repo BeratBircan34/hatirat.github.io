@@ -1,0 +1,131 @@
+/* Genel Stil Ayarları */
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header bölümü */
+header {
+    background-color: #fdf5e6;
+    padding: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 70px;
+    color: rgb(214, 182, 122);
+    margin: 0;
+}
+
+header p {
+    font-family: 'Cinzel', serif;
+    color: black;
+    font-size: 25px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    justify-content: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Duyuru Sayfası Ana Alanı */
+.announcements-section {
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 36px;
+    text-align: center;
+    color: rgb(214, 182, 122);
+    font-family: 'Cinzel', serif;
+}
+
+.announcement-card {
+    background-color: #f9f9f9;
+    border: 1px solid #d6b67a;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.announcement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.announcement-title {
+    font-size: 28px;
+    color: #4a3f2b;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 10px;
+}
+
+.announcement-date {
+    font-size: 18px;
+    color: #d6b67a;
+    margin-bottom: 10px;
+}
+
+.announcement-details {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+}
+
+/* Mobil uyumlu stil */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .announcement-card {
+        padding: 15px;
+    }
+
+    .announcement-title {
+        font-size: 22px;
+    }
+
+    .announcement-date {
+        font-size: 16px;
+    }
+
+    .announcement-details {
+        font-size: 16px;
+    }
+}
